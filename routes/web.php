@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 
 Route::get('/inventory', [InventoryController::class, 'getInventoryData']);
+Route::get('/inventory-report/pdf', [InventoryController::class, 'generatePdfReport']);
+Route::get('/inventory-report/preview', [InventoryController::class, 'generatePdfReportPreview']);
